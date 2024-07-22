@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.aluminiumtn.shiftitems.mixin.client",
+	"compatibilityLevel": "JAVA_17",
+	"client": [
+		"ShiftItemsClientMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

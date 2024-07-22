@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "shiftitems",
+	"version": "${version}",
+	"name": "ShiftItems",
+	"description": "A mod that collects items in inventory when you sneaking",
+	"authors": [
+		"aluminiumtn"
+	],
+	"contact": {
+		"homepage": "https://github.com/I-wish-dsq",
+		"sources": "https://www.meme-arsenal.com/memes/b45cf9184a1c0eac79268cf719241e2f.jpg"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/shiftitems/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.aluminiumtn.shiftitems.ShiftItems"
+		],
+		"client": [
+			"net.aluminiumtn.shiftitems.ShiftItemsClient"
+		]
+	},
+	"mixins": [
+		"shiftitems.mixins.json",
+		{
+			"config": "shiftitems.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
